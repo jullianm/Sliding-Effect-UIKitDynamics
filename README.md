@@ -10,4 +10,4 @@ The UIDynamicBehavior subclass contains the following behaviors:
 
 .. which, grouped together, will create our sliding behavior. 
 
-![](SlidingEffect.gif)
+![](sliding-effect.gif)
