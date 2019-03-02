@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SettingsView" customModule="PanGesture" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="327"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="doh-rp-BdS">
+                    <rect key="frame" x="0.0" y="0.0" width="400" height="327"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fyZ-DU-28W">
+                            <rect key="frame" x="189" y="285" width="22" height="22"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="onShowDetailsPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="x1R-tS-4Tm"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="fyZ-DU-28W" secondAttribute="bottom" constant="20" id="AZd-ch-R5J"/>
+                        <constraint firstItem="fyZ-DU-28W" firstAttribute="centerX" secondItem="doh-rp-BdS" secondAttribute="centerX" id="pGF-uu-o1U"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="doh-rp-BdS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="AFj-MO-ynX"/>
+                <constraint firstItem="doh-rp-BdS" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="exN-zN-Psf"/>
+                <constraint firstItem="doh-rp-BdS" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="qZk-bI-UmH"/>
+                <constraint firstItem="doh-rp-BdS" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="z4L-gA-R7h"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="73.599999999999994" y="-104.7976011994003"/>
+        </view>
+    </objects>
+</document>
